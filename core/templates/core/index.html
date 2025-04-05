@@ -1,0 +1,30 @@
+{% load static %}
+{% load asset_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Svelte in Django</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Svelte-built CSS -->
+    <link rel="stylesheet" href="{% latest_svelte_asset 'css' %}">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Svelte will mount here -->
+    <div id="svelte-app"></div>
+
+    <!-- Svelte-built JS -->
+    <script type="module" src="{% latest_svelte_asset 'js' %}"></script>
+</body>
+</html>

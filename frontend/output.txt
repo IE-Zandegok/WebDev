@@ -1,0 +1,38 @@
+
+> frontend@0.0.0 dev
+> vite
+
+(node:37241) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+11:57:10 AM [vite-plugin-svelte] failed to require config /workspaces/WebDev/frontend/svelte.config.cjs
+/workspaces/WebDev/frontend/svelte.config.cjs:1
+import { defineConfig } from 'vite';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (node:internal/modules/cjs/loader:1472:18)
+    at Module._compile (node:internal/modules/cjs/loader:1501:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at loadSvelteConfig (file:///workspaces/WebDev/frontend/node_modules/@sveltejs/vite-plugin-svelte/src/utils/load-svelte-config.js:71:20)
+    at preResolveOptions (file:///workspaces/WebDev/frontend/node_modules/@sveltejs/vite-plugin-svelte/src/utils/options.js:154:9)
+    at config (file:///workspaces/WebDev/frontend/node_modules/@sveltejs/vite-plugin-svelte/src/index.js:62:21)
+error when starting dev server:
+/workspaces/WebDev/frontend/svelte.config.cjs:1
+import { defineConfig } from 'vite';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (node:internal/modules/cjs/loader:1472:18)
+    at Module._compile (node:internal/modules/cjs/loader:1501:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at loadSvelteConfig (file:///workspaces/WebDev/frontend/node_modules/@sveltejs/vite-plugin-svelte/src/utils/load-svelte-config.js:71:20)
+    at preResolveOptions (file:///workspaces/WebDev/frontend/node_modules/@sveltejs/vite-plugin-svelte/src/utils/options.js:154:9)
+    at config (file:///workspaces/WebDev/frontend/node_modules/@sveltejs/vite-plugin-svelte/src/index.js:62:21)
